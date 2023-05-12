@@ -10,11 +10,6 @@ while not finished:
         f.close()
         finished = True
     else:
-        qs += 1
-        r = open("questions.txt", "r")
-        line = r.readline()
-        if line.startswith('# of Questions: '):
-            line.replace(line[-1], str(qs))
         a = input("What is the answer for choice A: ")
         b = input("What is the answer for choice B: ")
         c = input("What is the answer for choice C: ")
