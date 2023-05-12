@@ -2,13 +2,19 @@
 # This will be six lines, and then store the questions in the file questions.txt.
 
 finished = False
+qs = 0
 while not finished:
     f = open("questions.txt", "a")
     question = input("To quit, type 'q' or write a multiple choice question: ")
     if question == 'q':
         f.close()
         finished = True
-    else: 
+    else:
+        qs += 1
+        r = open("questions.txt", "r")
+        line = r.readline()
+        if line.startswith('# of Questions: '):
+            line.replace(line[-1], str(qs))
         a = input("What is the answer for choice A: ")
         b = input("What is the answer for choice B: ")
         c = input("What is the answer for choice C: ")
