@@ -2,7 +2,6 @@
 # This will be six lines, and then store the questions in the file questions.txt.
 
 finished = False
-qs = 0
 while not finished:
     f = open("questions.txt", "a")
     question = input("To quit, type 'q' or write a multiple choice question: ")
