@@ -6,7 +6,8 @@ while not finished:
     f = open("questions.txt")
     score = 0
     for line in f:
-        if line.contains("Answer:"):
+        p
+        if line.startswith("Answer:"):
             answered = False
             while not answered:
                 answer = input("What is the answer? (type 'A', 'B', 'C', or 'D'): ")
@@ -16,7 +17,9 @@ while not finished:
                     if answer == line[-2]:
                         score += 1
                         print("Correct!")
+                        print("Here is your score: " + str(score))
                     else:
-                        print("Wrong! The correct answer is" + str(line[-2]))
+                        print("Wrong! The correct answer is" + str(line[-1]))
+                        print("Here is your score: " + str(score))
                     
 
