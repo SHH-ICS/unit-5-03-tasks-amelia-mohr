@@ -6,7 +6,6 @@ while not finished:
     f = open("questions.txt")
     score = 0
     for line in f:
-        p
         if line.startswith("Answer:"):
             answered = False
             while not answered:

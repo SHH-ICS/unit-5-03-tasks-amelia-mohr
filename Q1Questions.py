@@ -21,9 +21,9 @@ while not finished:
                 print("Please type either 'A', 'B', 'C', or 'D' for the answer")
             else: 
                 f.write(question)
-                f.write("A. " + a)
-                f.write("B. " + b)
-                f.write("C. " + c)
-                f.write("D. " + d)
-                f.write("Answer: " + answer + "\n")
+                f.write("A. " + a + "\n")
+                f.write("B. " + b + "\n")
+                f.write("C. " + c + "\n")
+                f.write("D. " + d + "\n")
+                f.write("Answer: " + answer + "\n\n")
                 done = True
