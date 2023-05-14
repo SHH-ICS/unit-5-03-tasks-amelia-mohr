@@ -19,7 +19,7 @@ while not finished:
             if answer != 'A' and answer != 'B' and answer != 'C' and answer != 'D':
                 print("Please type either 'A', 'B', 'C', or 'D' for the answer")
             else: 
-                f.write(question)
+                f.write(question + "\n")
                 f.write("A. " + a + "\n")
                 f.write("B. " + b + "\n")
                 f.write("C. " + c + "\n")
